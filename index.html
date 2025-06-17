@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P-Ticket Travel Booking Website</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <svg class="bus-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M8 6v6h8V6M6 4h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z"/>
+                        <circle cx="7" cy="17" r="2"/>
+                        <circle cx="17" cy="17" r="2"/>
+                    </svg>
+                    <span>P-Ticket</span>
+                </div>
+                
+                <nav class="nav-desktop">
+                    <a href="#" class="nav-link active">Home</a>
+                    <a href="#" class="nav-link">About</a>
+                    <a href="#" class="nav-link">Destination</a>
+                    <a href="#" class="nav-link">Ticket</a>
+                    <a href="#" class="nav-link">Contact</a>
+                </nav>
+                
+                <div class="nav-actions">
+                    <button class="btn-primary">Sign In</button>
+                    <button class="mobile-menu-btn" id="mobileMenuBtn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Mobile Menu -->
+            <div class="mobile-menu" id="mobileMenu">
+                <a href="#" class="mobile-nav-link">Home</a>
+                <a href="#" class="mobile-nav-link">About</a>
+                <a href="#" class="mobile-nav-link">Destination</a>
+                <a href="#" class="mobile-nav-link">Ticket</a>
+                <a href="#" class="mobile-nav-link">Contact</a>
+                <button class="btn-primary mobile-signin">Sign In</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-bg"></div>
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    End-to-End Travel with
+                    <span class="hero-highlight">P-Paribahan</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Experience comfortable and reliable bus travel across the country with our premium services
+                </p>
+            </div>
+            
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <div class="stat-number">
+                        <svg class="stat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                            <circle cx="9" cy="7" r="4"/>
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                        </svg>
+                        <span>500K+</span>
+                    </div>
+                    <p class="stat-label">Happy Customers</p>
+                </div>
+                
+                <div class="stat-item">
+                    <div class="stat-number">
+                        <svg class="stat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                            <circle cx="12" cy="10" r="3"/>
+                        </svg>
+                        <span>1.7 Lacks</span>
+                    </div>
+                    <p class="stat-label">KM Travelled</p>
+                </div>
+                
+                <div class="stat-item">
+                    <div class="stat-number">
+                        <svg class="stat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/>
+                        </svg>
+                        <span>80K+</span>
+                    </div>
+                    <p class="stat-label">Reviews</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Offers Section -->
+    <section class="offers">
+        <div class="container">
+            <h2 class="section-title">Best offers for you</h2>
+            
+            <div class="offers-grid">
+                <div class="offer-card offer-orange">
+                    <svg class="offer-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="10"/>
+                        <path d="M9 12l2 2 4-4"/>
+                    </svg>
+                    <h3 class="offer-title">15% OFF</h3>
+                    <p class="offer-subtitle">on your first journey</p>
+                </div>
+                
+                <div class="offer-card offer-yellow">
+                    <svg class="offer-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M4 22h16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v16a2 2 0 0 1-2 2z"/>
+                        <path d="M6 12h4"/>
+                        <path d="M6 8h4"/>
+                        <path d="M6 16h4"/>
+                    </svg>
+                    <h3 class="offer-title">NEWS</h3>
+                    <p class="offer-subtitle">Latest travel updates</p>
+                </div>
+                
+                <div class="offer-card offer-pink">
+                    <svg class="offer-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="20,12 20,22 4,22 4,12"/>
+                        <rect x="2" y="7" width="20" height="5"/>
+                        <line x1="12" y1="22" x2="12" y2="7"/>
+                        <path d="M12 7H7.5a2.5 2.5 0 0 1 0-5C11 2 12 7 12 7z"/>
+                        <path d="M12 7h4.5a2.5 2.5 0 0 0 0-5C13 2 12 7 12 7z"/>
+                    </svg>
+                    <h3 class="offer-title">20% OFF</h3>
+                    <p class="offer-subtitle">Weekend special</p>
+                </div>
+                
+                <div class="offer-card offer-purple">
+                    <svg class="offer-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+                    </svg>
+                    <h3 class="offer-title">Couple 20%</h3>
+                    <p class="offer-subtitle">Book together, save more</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section class="booking">
+        <div class="container">
+            <!-- Booking Form -->
+            <div class="booking-form-card">
+                <h2 class="form-title">P.H Paribahan</h2>
+                <p class="form-subtitle">AC Business • Chattogram - Sylhet - Dhaka • Today • 11:10 PM</p>
+                
+                <form class="booking-form" id="bookingForm">
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label class="form-label">
+                                <svg class="form-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                    <circle cx="12" cy="10" r="3"/>
+                                </svg>
+                                From
+                            </label>
+                            <select class="form-input" id="fromLocation">
+                                <option value="Dhaka">Dhaka</option>
+                                <option value="Chittagong">Chittagong</option>
+                                <option value="Sylhet">Sylhet</option>
+                                <option value="Rajshahi">Rajshahi</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="form-label">
+                                <svg class="form-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                    <circle cx="12" cy="10" r="3"/>
+                                </svg>
+                                To
+                            </label>
+                            <select class="form-input" id="toLocation">
+                                <option value="Sylhet">Sylhet</option>
+                                <option value="Dhaka">Dhaka</option>
+                                <option value="Chittagong">Chittagong</option>
+                                <option value="Rajshahi">Rajshahi</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="form-label">
+                                <svg class="form-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+                                    <line x1="16" y1="2" x2="16" y2="6"/>
+                                    <line x1="8" y1="2" x2="8" y2="6"/>
+                                    <line x1="3" y1="10" x2="21" y2="10"/>
+                                </svg>
+                                Date
+                            </label>
+                            <input type="date" class="form-input" id="travelDate" value="2024-01-15">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="form-label">
+                                <svg class="form-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10"/>
+                                    <polyline points="12,6 12,12 16,14"/>
+                                </svg>
+                                Time
+                            </label>
+                            <select class="form-input" id="travelTime">
+                                <option value="06:00">06:00 AM</option>
+                                <option value="10:00">10:00 AM</option>
+                                <option value="14:00">02:00 PM</option>
+                                <option value="18:00">06:00 PM</option>
+                                <option value="22:00" selected>10:00 PM</option>
+                            </select>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            
+            <div class="booking-content">
+                <!-- Seat Selection -->
+                <div class="seat-selection-card">
+                    <div class="seat-header">
+                        <h3 class="seat-title">Select Your Seat</h3>
+                        <div class="seat-legend">
+                            <div class="legend-item">
+                                <div class="legend-color available"></div>
+                                <span>Available</span>
+                            </div>
+                            <div class="legend-item">
+                                <div class="legend-color selected"></div>
+                                <span>Selected</span>
+                            </div>
+                            <div class="legend-item">
+                                <div class="legend-color booked"></div>
+                                <span>Booked</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bus-layout">
+                        <div class="driver-section">
+                            <span>Driver</span>
+                        </div>
+                        
+                        <div class="seats-container" id="seatsContainer">
+                            <!-- Seats will be generated by JavaScript -->
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Booking Summary -->
+                <div class="booking-summary-card">
+                    <h3 class="summary-title">Booking Summary</h3>
+                    
+                    <div class="summary-details">
+                        <div class="summary-row">
+                            <span class="summary-label">Route:</span>
+                            <span class="summary-value" id="summaryRoute">Dhaka → Sylhet</span>
+                        </div>
+                        
+                        <div class="summary-row">
+                            <span class="summary-label">Date:</span>
+                            <span class="summary-value" id="summaryDate">Jan 15, 2024</span>
+                        </div>
+                        
+                        <div class="summary-row">
+                            <span class="summary-label">Time:</span>
+                            <span class="summary-value" id="summaryTime">10:00 PM</span>
+                        </div>
+                        
+                        <div class="summary-row">
+                            <span class="summary-label">Selected Seats:</span>
+                            <span class="summary-value" id="summarySeats">None</span>
+                        </div>
+                        
+                        <hr class="summary-divider">
+                        
+                        <div class="summary-row">
+                            <span class="summary-label">Price per seat:</span>
+                            <span class="summary-value">৳560</span>
+                        </div>
+                        
+                        <div class="summary-row total">
+                            <span class="summary-label">Total:</span>
+                            <span class="summary-value total-price" id="totalPrice">৳0</span>
+                        </div>
+                    </div>
+                    
+                    <button class="confirm-btn" id="confirmBtn" disabled>
+                        Select Seats First
+                    </button>
+                    
+                    <p class="seat-count" id="seatCount"></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <svg class="bus-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M8 6v6h8V6M6 4h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z"/>
+                            <circle cx="7" cy="17" r="2"/>
+                            <circle cx="17" cy="17" r="2"/>
+                        </svg>
+                        <span>P-Ticket</span>
+                    </div>
+                    <p class="footer-description">
+                        Your trusted travel partner for comfortable and safe bus journeys across the country.
+                    </p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3 class="footer-title">Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Our Services</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3 class="footer-title">Contact Info</h3>
+                    <ul class="footer-contact">
+                        <li>
+                            <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                            </svg>
+                            <span>+880 123 456 789</span>
+                        </li>
+                        <li>
+                            <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                <polyline points="22,6 12,13 2,6"/>
+                            </svg>
+                            <span>info@p-ticket.com</span>
+                        </li>
+                        <li>
+                            <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                <circle cx="12" cy="10" r="3"/>
+                            </svg>
+                            <span>Dhaka, Bangladesh</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3 class="footer-title">Download Our App</h3>
+                    <p class="footer-description">Get our mobile app for easy booking</p>
+                    <button class="download-btn">Download Now</button>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>© 2024 P-Ticket. All rights reserved. | Privacy Policy | Terms & Conditions</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Success Modal -->
+    <div class="modal-overlay" id="successModal">
+        <div class="modal">
+            <button class="modal-close" id="modalClose">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="18" y1="6" x2="6" y2="18"/>
+                    <line x1="6" y1="6" x2="18" y2="18"/>
+                </svg>
+            </button>
+            
+            <div class="modal-content">
+                <div class="success-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                        <polyline points="22,4 12,14.01 9,11.01"/>
+                    </svg>
+                </div>
+                
+                <h2 class="modal-title">SUCCESS</h2>
+                
+                <p class="modal-description">
+                    Thank you for Booking Our Bus Seats. We are working on a Bus Seat booking System Using HTML, CSS, and JavaScript. This will help you to learn and practice new skills of yours. Now you are able to book any bus seat. Happy Journey! Thank you.
+                </p>
+                
+                <div class="booking-details">
+                    <p class="details-label">Booking Details:</p>
+                    <p class="details-info" id="modalSeats">Seats: </p>
+                    <p class="details-info" id="modalTotal">Total: </p>
+                </div>
+                
+                <button class="continue-btn" id="continueBtn">Continue</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>
